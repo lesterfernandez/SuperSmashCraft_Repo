@@ -1,0 +1,11 @@
+name: SuperSmashCraft
+version: 1.0
+main: me.thewarlord315.supersmashcraft.SuperSmashCraft
+description: Finally Super smash bros in minecraft!
+author: TheWarlord315
+
+commands:
+    supersmashcraft:
+        usage: / <command> <args> [opt args]
+        aliases: [ssc]
+        description: SuperSmashCraft command!
