@@ -25,19 +25,16 @@ int id = -1;
 			 ItemStack helmet = new ItemStack(Material.LEATHER_HELMET);
 	            LeatherArmorMeta mhelmet = (LeatherArmorMeta) helmet.getItemMeta();
 				  mhelmet.setColor(Color.RED);
-				  mhelmet.setColor(Color.AQUA);
 				  helmet.setItemMeta(mhelmet);
 			
 			 ItemStack chest = new ItemStack(Material.LEATHER_CHESTPLATE);
 	            LeatherArmorMeta mchest = (LeatherArmorMeta) chest.getItemMeta();
 				  mchest.setColor(Color.RED);
-				  mchest.setColor(Color.AQUA);
 				  chest.setItemMeta(mchest);
 			
 			 ItemStack legs = new ItemStack(Material.LEATHER_LEGGINGS);
 	            LeatherArmorMeta mleg = (LeatherArmorMeta) legs.getItemMeta();
 				  mleg.setColor(Color.RED);
-				  mleg.setColor(Color.AQUA);
 				  legs.setItemMeta(mleg);
 				  
 			 ItemStack boots = new ItemStack(Material.LEATHER_BOOTS);
