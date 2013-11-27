@@ -14,7 +14,7 @@ import org.bukkit.inventory.meta.LeatherArmorMeta;
 
 public class Mario extends SuperCommand {
 	
-	int id = -1;
+int id = -1;
 	
 	Arena a = ArenaManager.getInstance().getArena(id);
 	
@@ -41,10 +41,10 @@ public class Mario extends SuperCommand {
 	            LeatherArmorMeta meta4 = (LeatherArmorMeta) boots.getItemMeta(); //grabs ItemMeta
 				  meta4.setColor(Color.RED); // sets color
 				  boots.setItemMeta(meta4); //sets itemstack's itemmeta
-				  p.getInventory().addItem(helmet);
-				  p.getInventory().addItem(chest);
-				  p.getInventory().addItem(legs);
-				  p.getInventory().addItem(boots);
+				  p.getInventory().setHelmet(helmet);
+				  p.getInventory().setChestplate(chest);
+				  p.getInventory().setLeggings(legs);
+				  p.getInventory().setBoots(boots);
 				  p.setGameMode(GameMode.SURVIVAL);
 				  
 			return; 
@@ -54,5 +54,5 @@ public class Mario extends SuperCommand {
 	}
 	public Mario() {
         super("Get the mario kit!.", "<id>", "Mario");
- }
+	}
 }
