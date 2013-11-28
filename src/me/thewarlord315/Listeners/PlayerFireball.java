@@ -2,7 +2,6 @@ package me.thewarlord315.Listeners;
 
 import org.bukkit.Material;
 import org.bukkit.entity.Fireball;
-
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;

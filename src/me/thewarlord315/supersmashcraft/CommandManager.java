@@ -9,6 +9,7 @@ import me.thewarlord315.commands.Delete;
 import me.thewarlord315.commands.ForceStart;
 import me.thewarlord315.commands.ForceStop;
 import me.thewarlord315.commands.Join;
+import me.thewarlord315.commands.Kirby;
 import me.thewarlord315.commands.Leave;
 import me.thewarlord315.commands.Mario;
 import me.thewarlord315.commands.Reload;
@@ -35,6 +36,7 @@ public class CommandManager implements CommandExecutor {
             cmds.add(new Reload());
             cmds.add(new SetLocation());
             cmds.add(new Mario());
+            cmds.add(new Kirby());
     }
     
     public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {

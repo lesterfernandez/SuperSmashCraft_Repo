@@ -3,7 +3,6 @@ package me.thewarlord315.supersmashcraft;
 import me.thewarlord315.Listeners.BlockBreak;
 import me.thewarlord315.Listeners.PlayerDeath;
 import me.thewarlord315.Listeners.PlayerFireball;
-import me.thewarlord315.Listeners.PlayerInteract;
 import me.thewarlord315.Listeners.PlayerLeave;
 import me.thewarlord315.Listeners.PlayerLoseHunger;
 import me.thewarlord315.Listeners.SignManager;
@@ -27,7 +26,6 @@ public class SuperSmashCraft extends JavaPlugin {
         PluginManager pm = Bukkit.getServer().getPluginManager();
         pm.registerEvents(new BlockBreak(), this);
         pm.registerEvents(new PlayerDeath(), this);
-        pm.registerEvents(new PlayerInteract(), this);
         pm.registerEvents(new PlayerLeave(), this);
         pm.registerEvents(new PlayerLoseHunger(), this);
         pm.registerEvents(new PlayerFireball(), this);

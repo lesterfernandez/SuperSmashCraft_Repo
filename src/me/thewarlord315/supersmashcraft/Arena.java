@@ -1,13 +1,13 @@
 package me.thewarlord315.supersmashcraft;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 import me.thewarlord315.Listeners.SignManager;
 import me.thewarlord315.supersmashcraft.Arena.ArenaState;
 import me.thewarlord315.supersmashcraft.MessageManager.MessageType;
 
 import org.bukkit.Bukkit;
+import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.block.Sign;
 import org.bukkit.configuration.ConfigurationSection;
@@ -63,7 +63,8 @@ public class Arena {
             data.add(new PlayerData(p));
             
             p.getInventory().clear();
-            p.getInventory().addItem(Wand.values()[new Random().nextInt(Wand.values().length)].createItemStack());
+            p.setGameMode(GameMode.SURVIVAL);
+            MessageManager.getInstance().msg(p, MessageType.INFO, "Please choose a charater! do /ssc (Character)");
             
             p.teleport(spawnPoint);
             
