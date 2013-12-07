@@ -49,6 +49,36 @@ int id = -1;
 				  
 			return; 
 		}
+		if (ArenaManager.getInstance().getArena(p).getState() == ArenaState.COUNTING_DOWN) {
+			p.getInventory().addItem(new ItemStack(Material.FIREBALL));
+			
+			 ItemStack helmet = new ItemStack(Material.LEATHER_HELMET);
+	            LeatherArmorMeta mhelmet = (LeatherArmorMeta) helmet.getItemMeta();
+				  mhelmet.setColor(Color.RED);
+				  helmet.setItemMeta(mhelmet);
+			
+			 ItemStack chest = new ItemStack(Material.LEATHER_CHESTPLATE);
+	            LeatherArmorMeta mchest = (LeatherArmorMeta) chest.getItemMeta();
+				  mchest.setColor(Color.RED);
+				  chest.setItemMeta(mchest);
+			
+			 ItemStack legs = new ItemStack(Material.LEATHER_LEGGINGS);
+	            LeatherArmorMeta mleg = (LeatherArmorMeta) legs.getItemMeta();
+				  mleg.setColor(Color.RED);
+				  legs.setItemMeta(mleg);
+				  
+			 ItemStack boots = new ItemStack(Material.LEATHER_BOOTS);
+	            LeatherArmorMeta meta4 = (LeatherArmorMeta) boots.getItemMeta();
+				  meta4.setColor(Color.RED);
+				  boots.setItemMeta(meta4);
+				  p.getInventory().setHelmet(helmet);
+				  p.getInventory().setChestplate(chest);
+				  p.getInventory().setLeggings(legs);
+				  p.getInventory().setBoots(boots);
+				  p.setGameMode(GameMode.SURVIVAL);
+				  
+			return; 
+		}
 		p.sendMessage(ChatColor.RED + "You must be in a waiting game to choose this character!");
 		return;
 	}
