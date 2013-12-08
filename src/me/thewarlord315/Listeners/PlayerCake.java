@@ -22,7 +22,7 @@ public class PlayerCake implements Listener {
 	       
 	        if (!(e.getItem().getType() == Material.CAKE)) return;
 	        
-	        e.getPlayer().setVelocity(e.getPlayer().getLocation().getDirection().multiply(3));
+	        e.getPlayer().setVelocity(e.getPlayer().getLocation().getDirection().multiply(2));
             e.getPlayer().setVelocity(new Vector(e.getPlayer().getVelocity().getX(), 1.0D, e.getPlayer().getVelocity().getZ()));
             jumpers.add(e.getPlayer());
 	}
