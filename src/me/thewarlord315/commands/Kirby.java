@@ -84,6 +84,6 @@ int id = -1;
 		return;
 	}
 	public Kirby() {
-        super("Get the kirby kit!.", "<id>", "Kirby");
+        super("Select the Kirby character!.", "<id>", "Kirby");
 	}
 }
