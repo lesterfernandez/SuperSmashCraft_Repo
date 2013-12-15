@@ -44,6 +44,6 @@ public class SetLocation extends SuperCommand {
 }
 
 public SetLocation() {
-        super("Set the spawn location.", "<id>", "s", "sloc", "location", "loc");
+        super("Set the spawn location.", "<id>", "setspawn");
 }
 }
