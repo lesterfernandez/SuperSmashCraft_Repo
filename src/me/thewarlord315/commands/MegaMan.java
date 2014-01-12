@@ -20,7 +20,7 @@ int id = -1;
 	
 	public void onCommand(Player p, String[] args) {
 		if (ArenaManager.getInstance().getArena(p).getState() == ArenaState.WAITING) {
-			// TODO add special item
+			//p.getInventory().addItem(new ItemStack(Material.?????))
 			
 			 ItemStack helmet = new ItemStack(Material.LEATHER_HELMET);
 	            LeatherArmorMeta mhelmet = (LeatherArmorMeta) helmet.getItemMeta();
@@ -50,7 +50,7 @@ int id = -1;
 			return; 
 		}
 		if (ArenaManager.getInstance().getArena(p).getState() == ArenaState.COUNTING_DOWN) {
-			// TODO add special item
+			//p.getInventory().addItem(new ItemStack(Material.?????))
 			
 			 ItemStack helmet = new ItemStack(Material.LEATHER_HELMET);
 	            LeatherArmorMeta mhelmet = (LeatherArmorMeta) helmet.getItemMeta();
@@ -83,7 +83,7 @@ int id = -1;
 		return;
 	}
 	public MegaMan() {
-        super("Select the MegaMan character!.", "<id>", "Mario");
+        super("Select the MegaMan character!.", "<id>", "Megaman");
 	}
 	
 }
