@@ -20,7 +20,8 @@ int id = -1;
 	
 	public void onCommand(Player p, String[] args) {
 		if (ArenaManager.getInstance().getArena(p).getState() == ArenaState.WAITING) {
-			//p.getInventory().addItem(new ItemStack(Material.?????))
+			p.getInventory().addItem(new ItemStack(Material.BOW));
+			p.getInventory().addItem(new ItemStack(Material.ARROW, 64));
 			
 			 ItemStack helmet = new ItemStack(Material.LEATHER_HELMET);
 	            LeatherArmorMeta mhelmet = (LeatherArmorMeta) helmet.getItemMeta();
@@ -50,7 +51,8 @@ int id = -1;
 			return; 
 		}
 		if (ArenaManager.getInstance().getArena(p).getState() == ArenaState.COUNTING_DOWN) {
-			//p.getInventory().addItem(new ItemStack(Material.?????))
+			p.getInventory().addItem(new ItemStack(Material.BOW));
+			p.getInventory().addItem(new ItemStack(Material.ARROW, 64));
 			
 			 ItemStack helmet = new ItemStack(Material.LEATHER_HELMET);
 	            LeatherArmorMeta mhelmet = (LeatherArmorMeta) helmet.getItemMeta();
