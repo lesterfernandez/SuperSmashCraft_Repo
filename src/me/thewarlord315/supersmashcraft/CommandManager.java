@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Vector;
 
+import me.thewarlord315.commands.Bowser;
 import me.thewarlord315.commands.Create;
 import me.thewarlord315.commands.Delete;
 import me.thewarlord315.commands.ForceStart;
@@ -39,6 +40,7 @@ public class CommandManager implements CommandExecutor {
             cmds.add(new Mario());
             cmds.add(new Kirby());
             cmds.add(new MegaMan());
+            cmds.add(new Bowser());
     }
     
     public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
